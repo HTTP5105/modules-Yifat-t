@@ -1,16 +1,14 @@
-import {eriadorDetails} from './my-script.js';
+/* eslint linebreak-style: ["error", "windows"] */
+import { eriadorDetails } from './my-script.js';
 
-var HobbitSettlement = class {
+const HobbitSettlement = class {
 	constructor(name, founding, founders) {
 		this.name = name;
 		this.founding = founding;
 		this.founders = founders;
-		this.originalSettlement = {name:'Eriador', details: eriadorDetails};
+		this.originalSettlement = { name: 'Eriador', details: eriadorDetails };
 	}
 };
-
-var theShire = new HobbitSettlement('The Shire', 1601, ['Marcho', 'Blanco']);
-var buckland = new HobbitSettlement('Buckland', 2340, 'Gorhendad Oldbuck');
-
- 
+const theShire = new HobbitSettlement('The Shire', 1601, ['Marcho', 'Blanco']);
+const buckland = new HobbitSettlement('Buckland', 2340, ['Gorhendad Oldbuck']);
 export { theShire, buckland, HobbitSettlement };
